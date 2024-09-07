@@ -1,0 +1,9 @@
+<[file][][]
+  <[object][][]
+    <[string8][Description][Tundra]>
+    <[string8][Type][hidden]>
+    <[string8][Tags][undercarriage]>
+        <[vec32array][ContactSpheres][ ( 0.333 -0.841 -1.559 0.435 ) ( 0.333 0.841 -1.559 0.435 ) (-4.882 0.025 -0.606 0.085 ) ]>
+  >
+>
+

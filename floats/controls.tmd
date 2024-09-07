@@ -1,0 +1,22 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmcontrol][ControlObjects][]
+
+            // swimmer gear switch		
+            <[control_cylinder][SwimmerGearSwitch][21]
+                <[string8][Type][toggle switch]>
+                <[vector3_float64][R0][0.2411 0.2435 -0.6953]>
+                <[matrix3_float64][B0][ 1.0  0 0   0.0  1.0  0.0   0.0  0.0  1.0 ]>
+                <[vector3_float64][Direction][-1.0 0.0 0.0 ]>
+                <[float64][StepAngle][0.1]>	
+                <[control_message][OnRotate][]
+                    <[string8][Message][Controls.Controls.Gear]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.004]>
+                <[float64][Length][0.13]>
+            >
+        >
+    >
+>
