@@ -3743,14 +3743,24 @@
                 <[string8][Input][RotationSpeed.Output]>
                 <[tmvector2d][Map][ (-20.0 0.05)  (0.00 0.0) (20.0 0.05) (104.82 1.0) (188.68 0.8) (524.11 0.1) ]>
             >
-            <[soundloop][RPMVolumeLoop][]
+            <[soundloop][RPMVolumeLoopInt][]
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][InputVolume][RPMVolume.Output]>
                 <[string8][InputPitch][RPMPitch.Output]>
-                <[string8][SoundFile][engn1.wav]>
+                <[string8][SoundFile][engn1_inn.wav]>
+                <[bool][External][false]>				
                 <[tmvector3d][R0][ 1.5 0.0 -0.3]>				
             >
+            <[soundloop][RPMVolumeLoopExt][]
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][VelocityID][Fuselage.V]>
+                <[string8][InputVolume][RPMVolume.Output]>
+                <[string8][InputPitch][RPMPitch.Output]>
+                <[string8][SoundFile][engn1_out.wav]>
+                <[bool][Internal][false]>				
+                <[tmvector3d][R0][ 1.5 0.0 -0.3]>				
+            >			
             <[soundmapping][RPMHighPitch][]
                 <[string8][Input][RotationSpeed.Output]>
                 <[tmvector2d][Map][ (0.00 0.3) (220.13 1.00) (524.11 2.38) ]>
@@ -3759,7 +3769,7 @@
                 <[string8][Input][RotationSpeed.Output]>
                 <[tmvector2d][Map][ (0.00 0.0) (104.82 0.1) (220.13 0.7) (524.11 1.00) ]>
             >
-            <[soundloop][RPMVolumeHighLoopInternal][]
+            <[soundloop][RPMVolumeHighLoopInt][]
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][InputVolume][RPMHighVolume.Output]>
@@ -3768,7 +3778,7 @@
                 <[bool][External][false]>
                 <[tmvector3d][R0][ 1.5 0.0 -0.3]>			
             >
-            <[soundloop][RPMVolumeHighLoopExternal][]
+            <[soundloop][RPMVolumeHighLoopExt][]
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][InputVolume][RPMHighVolume.Output]>
