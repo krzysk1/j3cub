@@ -1,12 +1,12 @@
 <[file][][]
     <[hints][][]
         // Piper J-3 Cub
-        <[float64][MaximumTakeOffMass][553.0]>
-        <[float64][WingSpan][10.7]>
-        <[float64][WingArea][12.0]>
-        <[float64][HeightOffset][-1.55]>
+        <[float64][MaximumTakeOffMass][499.0]>
+        <[float64][WingSpan][10.74]>
+        <[float64][WingArea][16.58]>
+        <[float64][HeightOffset][-1.559]>
         <[float64][ApproachSpeed][28.3]>
-        <[float64][PatternSpeed][46.3]>
+        <[float64][PatternSpeed][33.3]>
         <[float64][InitialClimbSpeed][28.3]>
         <[int][EngineCount][1]>
         <[bool][Piston][true]>
