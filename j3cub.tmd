@@ -798,9 +798,6 @@
                 <[float64][Speed][10.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][1.0]>
-                <[float64][P2][0.0]>
-                <[float64][P2][0.0]>
-                <[float64][P3][0.0]>
             >
             <[output_free][LeftBrakePedalOutput][]
                 <[string8][Input][LeftBrakePedal.Output]>
@@ -810,9 +807,6 @@
                 <[float64][Speed][10.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][1.0]>
-                <[float64][P2][0.0]>
-                <[float64][P2][0.0]>
-                <[float64][P3][0.0]>
             >
             <[output_free][RightBrakePedalOutput][]
                 <[string8][Input][RightBrakePedal.Output]>
@@ -829,12 +823,10 @@
                 <[tmvector2d][Range][ -1.0 1.0 ]>
             >
             <[servoclassic][StickElevator][]
-                <[string8][Input][ElevatorInput.Output]>
+                <[string8][Input][ElevatorTrimmed.Output]>
                 <[float64][Speed][20.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][1.0]>
-                <[float64][P2][0.0]>
-                <[float64][P3][0.0]>
             >
             <[output_free][StickElevatorOutput][]
                 <[string8][Input][StickElevator.Output]>
@@ -871,6 +863,16 @@
                 <[string8][Message][Aircraft.PitchTrim]>
                 <[string8][Qualifiers][ normalized ]>
             >
+            <[mixlinear][ElevatorTrimmedMix][]
+                <[string8][Input0][ElevatorInput.Output]>
+                <[string8][Input1][PitchTrim.Output]>
+                <[float64][Weight0][1.0]>
+                <[float64][Weight1][0.2]>
+            >
+            <[clamp][ElevatorTrimmed][]
+                <[string8][Input][ElevatorTrimmedMix.Output]>
+                <[tmvector2d][Range][ -1.0 1.0 ]>
+            >
 
             // aileron
             <[input_control][AileronInput][]
@@ -901,8 +903,6 @@
                 <[float64][Speed][20.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][1.0]>
-                <[float64][P2][0.0]>
-                <[float64][P3][0.0]>
             >
             <[output_free][StickAileronOutput][]
                 <[string8][Input][StickAileron.Output]>
@@ -949,8 +949,6 @@
                 <[float64][Speed][20.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][-0.5236]>
-                <[float64][P2][0.0]>
-                <[float64][P3][0.0]>
             >
             <[output_free][RudderOutput][]
                 <[string8][Input][Rudder.Output]>
@@ -1528,7 +1526,7 @@
 				<[tmvector3d][Axis][0.0 1.0 0.0]>
 				<[tmvector3d][Pivot][-0.152778 0.269012 0.264097]>
                 <[float64][Scaling][0.523599]>
-                <[float64][Offset][3.1415]>				
+                <[float64][Offset][3.1415]>
             >
 			// magnetic compass
             <[rigidbodygraphics][MagneticCompassCard][]
@@ -3132,7 +3130,7 @@
 					  <[tmvector3d][R0][ -0.8297 0.2289 -0.2739 ]>
 					  <[tmvector3d][X0][ -0.2584 0.2924 -0.9207 ]>
 					  <[tmvector3d][Y0][ -0.9652 -0.0378 0.2589 ]>
-					  <[tmvector3d][Z0][ 0.0409 0.9555 0.2920 ]>					
+					  <[tmvector3d][Z0][ 0.0409 0.9555 0.2920 ]>
 				  >
 				  <[bone][element][66]
 					  <[string8][Name][Bip01_L_Forearm]>
