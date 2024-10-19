@@ -1332,7 +1332,7 @@
 				<[uint32][PositionID][Fuselage.R]>
 				<[uint32][OrientationID][Fuselage.Q]>
 				<[string8][InputID][LeftBrakePedal.Output]>
-				<[tmvector3d][Axis][0.0 -1.0 0.0]>
+				<[tmvector3d][Axis][0.0 1.0 0.0]>
 				<[tmvector3d][Pivot][0.945418 0.016345 -0.936953]>
                 <[float64][Scaling][0.261799]>
             >
@@ -1341,7 +1341,7 @@
 				<[uint32][PositionID][Fuselage.R]>
 				<[uint32][OrientationID][Fuselage.Q]>
 				<[string8][InputID][LeftBrakePedal.Output]>
-				<[tmvector3d][Axis][0.0 -1.0 0.0]>
+				<[tmvector3d][Axis][0.0 1.0 0.0]>
 				<[tmvector3d][Pivot][-0.049360 0.011675 -0.984539]>
                 <[float64][Scaling][0.261799]>
             >
@@ -1350,7 +1350,7 @@
 				<[uint32][PositionID][Fuselage.R]>
 				<[uint32][OrientationID][Fuselage.Q]>
 				<[string8][InputID][RightBrakePedal.Output]>
-				<[tmvector3d][Axis][0.0 -1.0 0.0]>
+				<[tmvector3d][Axis][0.0 1.0 0.0]>
 				<[tmvector3d][Pivot][-0.049360 0.011675 -0.984539]>
                 <[float64][Scaling][0.261799]>
             >
@@ -1359,7 +1359,7 @@
 				<[uint32][PositionID][Fuselage.R]>
 				<[uint32][OrientationID][Fuselage.Q]>
 				<[string8][InputID][RightBrakePedal.Output]>
-				<[tmvector3d][Axis][0.0 -1.0 0.0]>
+				<[tmvector3d][Axis][0.0 1.0 0.0]>
 				<[tmvector3d][Pivot][0.945418 0.016345 -0.936953]>
                 <[float64][Scaling][0.261799]>
             >
