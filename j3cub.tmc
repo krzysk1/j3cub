@@ -1,18 +1,22 @@
 ﻿<[file][][]
-    <[object][][]
-        <[int][Version][220]>
-        <[vec32array][ContactSpheres][ ( 0.333 -0.841 -1.559 0.238 ) ( 0.333 0.841 -1.559 0.238 ) (-4.882 0.025 -0.606 0.085 ) ]>
-        <[string8][ICAO][J3]>
+    <[modelinformation][][]
+        <[int32][Version][220]>
+        <[list_vector4_float64][ContactSpheres][ ( 0.333 -0.841 -1.559 0.238 ) ( 0.333 0.841 -1.559 0.238 ) (-4.882 0.025 -0.606 0.085 ) ]>
+        <[stringt8c][ICAO][J3]>
         <[string8][DisplayName][Piper J-3 Cub]>
         <[string8][DisplayNameFull][Piper J-3 Cub]>
-        <[localized_text_list][Descriptions][]
-            <[localized_text][][]
+        <[list_localized_text][Descriptions][]
+            <[localized_text][element][0]
                 <[string8][Language][en]>
                 <[string8][Text][The Piper J-3 Cub is an American light aircraft that was built between 1938 and 1947 by Piper Aircraft. The aircraft has a simple, lightweight design which gives it good low-speed handling properties and short-field performance. Aerofly FS4 aircraft made by Krzysztof Kaniewski. 3D model by A-Pilot.]>
 			>
-            <[localized_text][][]
+            <[localized_text][element][1]
                 <[string8][Language][de]>
                 <[string8][Text][Die Piper J-3 Cub ist ein amerikanisches Leichtflugzeug, das zwischen 1938 und 1947 von Piper Aircraft gebaut wurde. Das Flugzeug hat ein einfaches, leichtes Design, das ihm gute Handlingseigenschaften bei niedriger Geschwindigkeit und eine gute Leistung auf kurzen Strecken verleiht. Das Flugzeug für Aerofly FS4 wurde von Krzysztof Kaniewski hergestellt. Das 3D-Modell stammt von A-Pilot.]>
+			>
+            <[localized_text][element][2]
+                <[string8][Language][pl]>
+                <[string8][Text][Piper J-3 Cub to amerykański lekki samolot produkowany w latach 1938-1947 przez firmę Piper Aircraft. Samolot ma prostą, lekką konstrukcję, która zapewnia mu dobre właściwości pilotażowe przy niskich prędkościach i osiągi na krótkim polu. Samolot Aerofly FS4 wykonany przez Krzysztofa Kaniewskiego. Model 3D autorstwa A-Pilot.]>
 			>
         >
         <[float64][WingSpan][10.74]>
