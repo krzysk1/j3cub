@@ -1210,7 +1210,7 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][GeometryList][ Fuselage_23373_5 Glass_6246_7 Glass_window_intrior ]>
                 <[uint32][InputID][DoorPosition.Output]>
-                <[tmvector3d][Axis][1.0 0.0 0.0]>
+                <[tmvector3d][Axis][-1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][-0.040250 -0.316662 0.148732]>
                 <[float64][Scaling][1.570797]>
             >
@@ -1219,12 +1219,12 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][GeometryList][ Fuselage_25161_5 ]>
                 <[uint32][InputID][DoorPosition.Output]>
-                <[tmvector3d][Axis][-1.0 0.0 0.0]>
+                <[tmvector3d][Axis][1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][-0.086252 -0.325114 -0.661687]>
                 <[float64][Scaling][3.12414]>
             >
             <[hingedbodygraphics][DoorHandle][]
-                <[string8][GeometryList][ Fuselage_26889_5 ]>
+                <[string8][GeometryList][ Fuselage_26889_5 J3Cub_cockpit_7413_20 ]>
                 <[uint32][InputID][DoorPosition.Output]>
                 <[tmvector3d][Axis][ 0.0444 -0.999 -0.0011 ]>
                 <[tmvector3d][Pivot][ -0.0713 -0.3978 -0.2016 ]>
@@ -1366,7 +1366,7 @@
 
 			// Cockpit
 			<[rigidbodygraphics][RigidCockpit][]
-				<[string8][GeometryList][ J3Cub_cockpit_20 J3Cub_cockpit_42_20 J3Cub_cockpit_7413_20 J3Cub_cockpit_10875_20 J3Cub_cockpit_17103_20 ]>
+				<[string8][GeometryList][ J3Cub_cockpit_20 J3Cub_cockpit_42_20 J3Cub_cockpit_10875_20 J3Cub_cockpit_17103_20 ]>
 				<[uint32][PositionID][Fuselage.R]>
 				<[uint32][OrientationID][Fuselage.Q]>
 			>

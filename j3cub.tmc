@@ -7,37 +7,36 @@
         <[string8][DisplayNameFull][Piper J-3 Cub]>
         <[list_localized_text][Descriptions][]
             <[localized_text][element][0]
-                <[string8][Language][en]>
+                <[string8u][Language][en]>
                 <[string8][Text][The Piper J-3 Cub is an American light aircraft that was built between 1938 and 1947 by Piper Aircraft. The aircraft has a simple, lightweight design which gives it good low-speed handling properties and short-field performance. Aerofly FS4 aircraft made by Krzysztof Kaniewski. 3D model by A-Pilot.]>
 			>
             <[localized_text][element][1]
-                <[string8][Language][de]>
+                <[string8u][Language][de]>
                 <[string8][Text][Die Piper J-3 Cub ist ein amerikanisches Leichtflugzeug, das zwischen 1938 und 1947 von Piper Aircraft gebaut wurde. Das Flugzeug hat ein einfaches, leichtes Design, das ihm gute Handlingseigenschaften bei niedriger Geschwindigkeit und eine gute Leistung auf kurzen Strecken verleiht. Das Flugzeug für Aerofly FS4 wurde von Krzysztof Kaniewski hergestellt. Das 3D-Modell stammt von A-Pilot.]>
 			>
             <[localized_text][element][2]
-                <[string8][Language][pl]>
+                <[string8u][Language][pl]>
                 <[string8][Text][Piper J-3 Cub to amerykański lekki samolot produkowany w latach 1938-1947 przez firmę Piper Aircraft. Samolot ma prostą, lekką konstrukcję, która zapewnia mu dobre właściwości pilotażowe przy niskich prędkościach i osiągi na krótkim polu. Samolot Aerofly FS4 wykonany przez Krzysztofa Kaniewskiego. Model 3D autorstwa A-Pilot.]>
 			>
         >
-        <[float64][WingSpan][10.74]>
-        <[float64][MinimumAirspeed]        [16.5]>
-        <[float64][ApproachAirspeed]       [24.58]>
-        <[float64][CruiseAirspeed]         [33.0]>
-        <[float64][CruiseSpeed]            [50.0]>
-        <[float64][MaximumAirspeed]        [40.0]>
-        <[float64][MaximumSpeed]           [40.0]>
-        <[tmvector2d][NormalAirspeedRange] [ 16.5 33.0 ]>
-        <[tmvector2d][CautionAirspeedRange][ 33.0 40.0 ]>
-        <[tmvector2d][FlapAirspeedRange]   [ 0.0  0.0 ]>
-        <[float64][MaximumAltitude][3658.0]>
-        <[float64][CruiseAltitude][1826.0]>
         <[float64][MaximumTakeoffMass][499.0]>
-        <[float64][EnginePower][48470.0]>
-        <[float64][MaximumRange][400000.0]>
-        <[uint][UnitsBuilt][34849]>
-        <[uint][EngineCount][1]>
-        <[uint][Year][1938]>
-        <[string8][Tags][ airplane piston general_aviation gear tailgear ]>
+        <[float64][WingSpan]          [10.74]>
+        <[uint32] [Year]              [1938]>
+        <[uint32] [UnitsBuilt]        [34849]>
+        <[uint32] [EngineCount]       [1]>
+        <[float64][EnginePower]       [48470.0]>
+        <[float64][MinimumAirspeed]   [16.5]>
+        <[float64][ApproachAirspeed]  [24.58]>
+        <[float64][CruiseAirspeed]    [33.0]>
+        <[float64][CruiseSpeed]       [50.0]>
+        <[float64][MaximumAirspeed]   [40.0]>
+        <[float64][MaximumSpeed]      [40.0]>
+        <[float64][MaximumAltitude]   [3658.0]>
+        <[float64][CruiseAltitude]    [1826.0]>
+        <[float64][MaximumRange]      [400000.0]>
+        <[vector2_float64][NormalAirspeedRange] [ 16.5 33.0 ]>
+        <[vector2_float64][CautionAirspeedRange][ 33.0 40.0 ]>
+        <[string8][Tags][ airplane historical piston general_aviation gear tailgear ]>
         <[string8][Pilot][pilot_robert]>
     >
 >
