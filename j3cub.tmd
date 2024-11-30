@@ -14,7 +14,6 @@
             // telemetry
             <[telemetry][Telemetry][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][LookAtPosition][ 0.0 0.0 -0.3 ]>
             >
             <[event_value][DEV0][]
             >
@@ -28,7 +27,7 @@
             >
             <[camera_head][CameraPilot][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ -0.5775 0.0 -0.05235 ]>
+                <[tmvector3d][R0][ -0.62 0.0 -0.07 ]>
                 <[tmvector3d][Direction][ 1.0 0.0 -0.1 ]>
                 <[bool][InCockpit][true]>
                 <[float64][Kf][80.0]>
@@ -39,7 +38,7 @@
             >
             <[camera_head][CameraPassenger][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ 0.2062 0.0 0.02988 ]>
+                <[tmvector3d][R0][ 0.19 0.0 -0.04 ]>
                 <[tmvector3d][Direction][ 1.0 0.0 -0.1 ]>
                 <[bool][InCockpit][true]>
                 <[float64][Kf][80.0]>
@@ -59,7 +58,7 @@
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ -3.287724 0.792829 -0.23923 ]>
                 <[tmvector3d][Direction][ 1.0 0.0 -0.1 ]>
-                <[bool][InCockpit][true]>
+                <[bool][InCockpit][false]>
                 <[string8][Tags][gear]>
             >
             <[camera][CameraStabilizer][]
