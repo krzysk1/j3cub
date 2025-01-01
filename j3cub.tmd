@@ -968,37 +968,34 @@
                 <[string8][Message][Controls.Canopy]>
                 <[float64][Value][0.0]>
             >
-            <[servolinear][DoorPosition][]
+            <[servolinear][DoorSequence][]
                 <[string8][Input][DoorInput.Output]>
-                <[float64][OutputSpeed][0.7]>
+                <[float64][OutputSpeed][0.5]>
                 <[float64][Position][0.0]>
-                <[float64array][InputPosition][ 0.75 1.0 ]>
+                <[float64array][InputPosition][ 0.0 1.0 ]>
                 <[float64array][OutputPosition][ 0.0 1.0 ]>
+            >
+            <[linear_interpolation][DoorPosition][]
+                <[string8][Input][DoorSequence.Output]>
+                <[tmvector2d][Map][ (0.2 0.0) (1.0 1.0) ]>
             >
             <[output_free][DoorPositionOutput][]
                 <[string8][Input][DoorPosition.Output]>
             >
-            <[servolinear][LeftWindowPosition][]
-                <[string8][Input][DoorInput.Output]>
-                <[float64][OutputSpeed][0.7]>
-                <[float64][Position][0.0]>
-                <[float64array][InputPosition][ 0.0 0.5 ]>
-                <[float64array][OutputPosition][ 0.0 1.0 ]>
+            <[linear_interpolation][DoorHandlePosition][]
+                <[string8][Input][DoorSequence.Output]>
+                <[tmvector2d][Map][ (0.0 0.0) (0.1 1.0) (0.2 0.0) ]>
             >
-            <[output_free][LeftWindowPositionOutput][]
-                <[string8][Input][LeftWindowPosition.Output]>
+            <[output_free][DoorHandlePositionOutput][]
+                <[string8][Input][DoorHandlePosition.Output]>
             >
-            <[servolinear][RightWindowPosition][]
-                <[string8][Input][DoorInput.Output]>
-                <[float64][OutputSpeed][0.7]>
-                <[float64][Position][0.0]>
-                <[float64array][InputPosition][ 0.5 0.75 ]>
-                <[float64array][OutputPosition][ 0.0 1.0 ]>
+            <[linear_interpolation][RightWindowPosition][]
+                <[string8][Input][DoorSequence.Output]>
+                <[tmvector2d][Map][ (0.0 0.0) (0.8 1.0) ]>
             >
             <[output_free][RightWindowPositionOutput][]
                 <[string8][Input][RightWindowPosition.Output]>
             >
-
 
             // animations end
 
@@ -1207,8 +1204,8 @@
             <[hingedbodygraphics][Window][]
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][GeometryList][ Fuselage_23373_5 Glass_6246_7 Glass_window_intrior ]>
-                <[uint32][InputID][DoorPosition.Output]>
+                <[string8][GeometryList][ Fuselage_23373_5 Fuselage_23373_5_out Glass_6246_7 Glass_window_intrior ]>
+                <[uint32][InputID][RightWindowPosition.Output]>
                 <[tmvector3d][Axis][-1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][-0.040250 -0.316662 0.148732]>
                 <[float64][Scaling][1.570797]>
@@ -1216,7 +1213,7 @@
             <[hingedbodygraphics][Door][]
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][GeometryList][ Fuselage_25161_5 ]>
+                <[string8][GeometryList][ Fuselage_25161_5 Fuselage_25161_5_out ]>
                 <[uint32][InputID][DoorPosition.Output]>
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][-0.086252 -0.325114 -0.661687]>
@@ -1224,9 +1221,9 @@
             >
             <[hingedbodygraphics][DoorHandle][]
                 <[string8][GeometryList][ Fuselage_26889_5 J3Cub_cockpit_7413_20 ]>
-                <[uint32][InputID][DoorPosition.Output]>
+                <[uint32][InputID][DoorHandlePosition.Output]>
                 <[tmvector3d][Axis][ 0.0444 -0.999 -0.0011 ]>
-                <[tmvector3d][Pivot][ -0.0713 -0.3978 -0.2016 ]>
+                <[tmvector3d][Pivot][ 0.0211 -0.3069 -0.3551 ]>
                 <[float64][Scaling][0.872665]>
                 <[string8][Graphics][Door]>
             >
@@ -1551,7 +1548,7 @@
             >
             <[graphics_rotation][PilotStickTransform][]
                 <[string8][Input][StickAileron.Output]>
-				<[tmvector3d][Axis][-0.999566 0.0 0.029448]>
+				<[tmvector3d][Axis][0.999566 0.0 -0.029448]>
 				<[tmvector3d][Pivot][0.074890 0.032338 -0.924505]>
                 <[string8][InputTransform][PilotStickElevatorRotation.Output]>
             >

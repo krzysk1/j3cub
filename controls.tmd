@@ -25,14 +25,14 @@
             >
             <[control_translation][PrimerLeverTranslation][]
                 <[string8][Input][PrimerLever.Output]>
-                <[vector3_float64][Axis][ -1.0 0.0 -0.0]>
+                <[vector3_float64][Axis][ -1.0 0.0 0.0]>
             >
             <[control_cylinder][Primer][]
                 <[string8][Type][lever toggle]>
                 <[vector3_float64][R0][ 0.6840 -0.2678 -0.3447 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
                 <[vector3_float64][Direction][ -1.0 0.0 0.0 ]>
-                <[float64][StepDistance][0.001]>
+                <[float64][StepDistance][0.002]>
                 <[string8][InputTransform][PrimerLeverTranslation.Output]>
                 <[control_message][OnStep][]
                     <[string8][Message][Controls.Primer]>
@@ -53,11 +53,11 @@
                 <[vector3_float64][Axis][ 1.0 0.0 0.0 ]>
             >
             <[control_sphere][FuelSelectorHandle][]
-                <[string8][Type][lever toggle]>
+                <[string8][Type][lever]>
                 <[vector3_float64][R0][ 0.3018 0.3576 -0.4060 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
-                <[vector3_float64][Direction][ -1.0 0.0 0.0 ]>
-                <[float64][StepDistance][0.1]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepDistance][0.0288]>
                 <[string8][InputTransform][FuelSelectorTransform.Output]>
                 <[control_message][OnStep][]
                     <[string8][Message][Controls.FuelSelector]>
@@ -65,20 +65,6 @@
                     <[float64][Value][1.0]>
                 >
                 <[float64][Radius][0.0059]>
-            >
-            <[control_cylinder][FuelSelectorBase][]
-                <[string8][Type][knob toggle]>
-                <[vector3_float64][R0][ 0.3298 0.3605 -0.400 ]>
-                <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
-                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
-                <[float64][StepAngle][0.5]>
-                <[control_message][OnRotate][]
-                    <[string8][Message][Controls.FuelSelector]>
-                    <[string8][Qualifiers][step]>
-                    <[float64][Value][1.0]>
-                >
-                <[float64][Radius][0.01]>
-                <[float64][Length][0.05]>
             >
 
             <[control_input][CarburettorHeatLeverMapping][]
@@ -238,8 +224,8 @@
             >
             <[control_input][CopilotThrottleLeverAngle][]
                 <[uint32][InputID][ThrottleLever.Output]>
-                <[float64][Scaling][0.7]>
-                <[float64][Offset][-0.3728]>
+                <[float64][Scaling][-0.872664]>
+                <[float64][Offset][0.436332]>
             >
             <[control_rotation][CopilotThrottleLeverTransform][]
                 <[string8][Input][CopilotThrottleLeverAngle.Output]>
@@ -305,7 +291,7 @@
                 <[control_message][OnRotate][]
                     <[string8][Message][Controls.Roll.Input]>
                     <[string8][Qualifiers][step]>
-                    <[float64][Value][15.0]>
+                    <[float64][Value][8.0]>
                 >
                 <[control_message][OnStep][]
                     <[string8][Message][Controls.Pitch.Input]>
@@ -333,11 +319,11 @@
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[vector3_float64][Direction2][ 0.0 -1.0 0.0 ]>
                 <[float64][StepDistance][0.00005]>
-                <[string8][InputTransform][StickCopilotTransform.Output]>
+                <[string8][InputTransform][StickTransform.Output]>
                 <[control_message][OnRotate][]
                     <[string8][Message][Controls.Roll.Input]>
                     <[string8][Qualifiers][step]>
-                    <[float64][Value][15.0]>
+                    <[float64][Value][8.0]>
                 >
                 <[control_message][OnStep][]
                     <[string8][Message][Controls.Pitch.Input]>
@@ -360,7 +346,7 @@
             >
             <[control_box][CanopyHandleNormal][23]
                 <[string8][Type][switch toggle]>
-                <[vector3_float64][R0][ -0.006339 -0.3094 -0.4335 ]>
+                <[vector3_float64][R0][ -0.02927 -0.284 -0.3606 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][StepAngle][0.1]>
@@ -370,7 +356,7 @@
                     <[string8][Qualifiers][step]>
                     <[float64][Value][1.0]>
                 >
-                <[vector3_float64][Dimensions][0.1 0.02 0.02]>
+                <[vector3_float64][Dimensions][0.12 0.027 0.02]>
             >
 
 //            // water rudder deploy
